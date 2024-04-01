@@ -5,12 +5,14 @@ img_path = "placeholder_image.png"
 
 index = """
 <|text-center|
-<|{"logo.png"}|image|>
+<|{"logo.png"}|image|width=25vw|>
 
 <|{content}|file_selector|extensions=.png|>
 select an image from your file system
 
 <|{img_path}|image|>
+
+<|label goes here|indicator|value=0|min=0|max=100|width=25vw|>
 >
 """
 
