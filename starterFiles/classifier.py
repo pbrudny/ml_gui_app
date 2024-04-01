@@ -1,6 +1,16 @@
 from taipy.gui import Gui
 
-index = "<h1> Hello from Python!</h1>"
+content = ""
+img_path = "logo.png"
+
+index = """
+<|text-center|
+<|{img_path}|image|>
+
+<|{content}|file_selector|>
+select an image from your file system
+>
+"""
 
 app = Gui(page=index)
 
